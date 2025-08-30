@@ -10,6 +10,10 @@ const StatsGrid = () => {
           <div className="flex items-start justify-between">
             <div className="flex-1">
               <p className="text-sm font-medium text-slate-600 dark:text-slate-400 mb-2">
+                Stats Title
+              </p>
+              <p className='text-3xl font-bold text-slate-800 dark:text-white mb-4'>
+                Stats Value
               </p>
           </div>
           </div>
