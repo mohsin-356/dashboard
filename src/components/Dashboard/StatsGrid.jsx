@@ -70,11 +70,11 @@ const StatsGrid = () => {
             </p>
           </div>
         </div>
-      </div>
-      {/* Progress bar */}
-      <div className='mt-4 h2 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden'>
-        <div className={`w-full bg-gradient-to-r rounded-full transition-all duration-100`}>
+        {/* Progress bar */}
+        <div className='mt-4 h2 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden'>
+          <div className={`w-full bg-gradient-to-r rounded-full transition-all duration-100`}>
 
+          </div>
         </div>
       </div>
     </div>
