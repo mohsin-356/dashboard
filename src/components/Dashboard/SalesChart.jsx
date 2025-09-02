@@ -62,11 +62,14 @@ const SalesChart = () => {
                   {item.name}
                 </span>
               </div>
+              <div className="text-sm font-semibold text-slate-800 dark:text-white">
+                {item.value}%
+              </div>
             </div>
           );
         })}
       </div>
-      
+
     </div>
   );
 };
