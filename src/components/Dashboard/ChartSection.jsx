@@ -6,6 +6,9 @@ const ChartSection = () => {
       <div className="xl:col-span-2">
         <RevenueChart />
       </div>
+      <div className='space-y-6'>
+
+      </div>
     </div>
   )
 }
