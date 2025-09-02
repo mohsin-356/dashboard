@@ -73,20 +73,20 @@ const StatsGrid = () => {
                     <span className='text-sm text-slate-500 dark:text-slate-400'>vs Last Month</span>
                   </div>
                 </div>
-                <div className={`p-3 rounded-xl group-hover:scale-110 transition-all duration-200`}>
-                  <p className="text-sm font-medium text-slate-600 dark:text-slate-400 mb-2">
-                    Stats Description
-                  </p>
+                <div className={`p-3 rounded-xl ${stat.bgColor} group-hover:scale-110 transition-all duration-200`}>
+                  <stat.icon className={`w-6 h-6 ${stat.textColor}`} />
                 </div>
               </div>
               {/* Progress bar */}
-              <div className='mt-4 h2 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden'>
-                <div className={`w-full bg-gradient-to-r rounded-full transition-all duration-100`}>
-
+              <div className='mt-4 h-2 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden'>
+                <div 
+                  className={`w-full bg-gradient-to-r ${stat.color} rounded-full transition-all duration-100`}
+                  style={{ width:stat.trend==="up" ? "75%" : "45%" }}
+                  >
                 </div>
               </div>
             </div>
-          )
+          );
         })
       }
     </div>
