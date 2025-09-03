@@ -130,38 +130,55 @@ const TableSection = () => {
                             </tr>
                         </thead>
                         <tbody>
-                            <tr className="border-b border-slate-200/50 dark:border-slate-700/50 hover:bg-slate-50/50  dark:hover:bg-slate-800/50 transition-colors">
-                                <td className="p-4">
-                                    <span className="text-sm font-medium text-blue">
-                                        Order ID
-                                    </span>
-                                </td>
-                                <td className="p-4">
-                                    <span className="text-sm text-slate-800 dark:text-white">
-                                        Customer
-                                    </span>
-                                </td>
-                                <td className="p-4">
-                                    <span className="text-sm text-slate-800 dark:text-white">
-                                        Product
-                                    </span>
-                                </td>
-                                <td className="p-4">
-                                    <span className="text-sm text-slate-800 dark:text-white">
-                                        Amount
-                                    </span>
-                                </td>
-                                <td className="p-4">
-                                    <span className={`text-slate-400 dark:text-white font-medium text-xs px-3 py-1 rounded-full`}>
-                                        Order Status
-                                    </span>
-                                </td>
-                                <td className="p-4">
-                                    <span className="text-sm text-slate-800 dark:text-white">
-                                        <MoreHorizontal className='w-4 h-4' />
-                                    </span>
-                                </td>
-                            </tr>
+                            {
+                                recentOrders.map((order, index) => {
+                                    return (
+                                        <tr key={index}
+                                        className="border-b border-slate-200/50 dark:border-slate-700/50 hover:bg-slate-50/50 dark:hover:bg-slate-800/50 transition-colors" >
+                                            <td className="p-4">
+                                                <span className="text-sm font-medium text-blue">
+                                                    Order ID
+                                                </span>
+                                            </td>
+
+                                            <td className="p-4">
+                                                <span className="text-sm text-slate-800 dark:text-white">
+                                                    Customer
+                                                </span>
+                                            </td>
+
+                                            <td className="p-4">
+                                                <span className="text-sm text-slate-800 dark:text-white">
+                                                    Product
+                                                </span>
+                                            </td>
+
+                                            <td className="p-4">
+                                                <span className="text-sm text-slate-800 dark:text-white">
+                                                    Amount
+                                                </span>
+                                            </td>
+
+                                            <td className="p-4">
+                                                <span
+                                                    className={`text-slate-400 dark:text-white font-medium 
+                        text-xs px-3 py-1 rounded-full`}
+                                                >
+                                                    Order Status
+                                                </span>
+                                            </td>
+
+                                            <td className="p-4">
+                                                <MoreHorizontal className="w-4 h-4 text-slate-800 dark:text-white" />
+                                            </td>
+                                        </tr>
+                                    );
+                                })
+                            }
+
+
+
+
                         </tbody>
                     </table>
                 </div>
