@@ -73,7 +73,7 @@ const TableSection = () => {
                                 </td>
                                 <td className="p-4">
                                     <span className="text-sm text-slate-800 dark:text-white">
-                                        <MoreHorizontal />
+                                        <MoreHorizontal className='w-4 h-4' />
                                     </span>
                                 </td>
                             </tr>
