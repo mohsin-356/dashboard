@@ -1,6 +1,74 @@
 import { MoreHorizontal } from 'lucide-react';
 import React from 'react'
 
+const recentOrders = [
+    {
+        id: "#3847",
+        customer: "John Smith",
+        product: 'MacBook Pro 16"',
+        amount: "$2,399",
+        status: "completed",
+        date: "2024-01-15",
+    },
+    {
+        id: "#3848",
+        customer: "Sarah Johnson",
+        product: "iPhone 15 Pro",
+        amount: "$1,199",
+        status: "pending",
+        date: "2024-01-15",
+    },
+    {
+        id: "#3849",
+        customer: "Mike Wilson",
+        product: "AirPods Pro",
+        amount: "$249",
+        status: "completed",
+        date: "2024-01-14",
+    },
+    {
+        id: "#3850",
+        customer: "Emily Davis",
+        product: "iPad Air",
+        amount: "$599",
+        status: "cancelled",
+        date: "2024-01-14",
+    },
+];
+console.log(recentOrders);
+
+const topProducts = [
+    {
+        name: 'MacBook Pro 16"',
+        sales: 1247,
+        revenue: "$2,987,530",
+        trend: "up",
+        change: "+12%",
+    },
+    {
+        name: "iPhone 15 Pro",
+        sales: 2156,
+        revenue: "$2,587,044",
+        trend: "up",
+        change: "+8%",
+    },
+    {
+        name: "AirPods Pro",
+        sales: 3421,
+        revenue: "$852,229",
+        trend: "down",
+        change: "-3%",
+    },
+    {
+        name: "iPad Air",
+        sales: 987,
+        revenue: "$591,213",
+        trend: "up",
+        change: "+15%",
+    }
+];
+console.log(topProducts);
+
 const TableSection = () => {
     const getStatusColor = (status) => {
         switch (status) {
