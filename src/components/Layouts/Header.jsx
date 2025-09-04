@@ -86,13 +86,13 @@ const Header = ({sidebarCollapsed,onToggleSidebar}) => {
 
           <div className="flex items-center space-x-3 pl-3 border-l border-slate-200 dark:border-slate-700">
             <img
-              src="https://t3.ftcdn.net/jpg/02/99/04/20/360_F_299042079_vGBD7wIlSeNl7vOevWHiL93G4koMM967.jpg"
+              src="public/eagle.jpg"
               alt="User"
               className="w-8 h-8 rounded-full ring-2 ring-blue-500"
             />
             <div className="hidden md:block">
               <p className="text-sm font-medium text-slate-500 dark:text-slate-400">
-                Alex JohnSon
+                Mohsin Saeed
               </p>
               <p className="text-xs ☐ text-slate-500 dark:text-slate-400">
                 Administrator
