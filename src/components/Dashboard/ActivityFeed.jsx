@@ -1,3 +1,4 @@
+import { Clock } from 'lucide-react'
 import React from 'react'
 
 const ActivityFeed = () => {
@@ -24,7 +25,8 @@ const ActivityFeed = () => {
                             <h4>Activity Title</h4>
                             <p>Activity Description</p>
                             <div className='flex items-center-safe space-w-1 mt-1'>
-
+                                <Clock className='w-3 h-3 text-slate-400' />
+                                <span className='text-xs text-slate-500 dark:text-slate-400'>Activity Time</span>
                             </div>
                         </div>
                     </div>
