@@ -73,21 +73,34 @@ const ActivityFeed = () => {
             </div>
             <div className="p-6">
                 <div className='space-y-6'>
-                    <div className='flex items-start space-x-4 p-3 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors'>
-                        <div className={`p-2 rounded-lg`}></div>
-                        <div className='flex-1 min-w-0'>
-                            <h4 className='text-slate-600 dark:text-slate-400'>Activity Title</h4>
-                            <p className='text-sm text-slate-600 dark:text-slate-400 truncate'>Activity Description</p>
-                            <div className='flex items-center-safe space-w-1 mt-1'>
-                                <Clock className='w-3 h-3 text-slate-400' />
-                                <span className='text-xs text-slate-500 dark:text-slate-400'>Activity Time</span>
-                            </div>
-                        </div>
-                    </div>
+                    {
+                        activities.map((activity, index) => {
+                            return (
+                                <div key={index} className="flex items-start space-x-4 p-3 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
+                                    <div className={`p-2 rounded-lg ${activity.bgColor}`}>
+                                        <activity.icon className={`w-4 h-4 ${activity.color}`} />
+                                    </div>
+                                    <div className="flex-1 min-w-0">
+                                        <h4 className="text-slate-600 dark:text-slate-400">
+                                            {activity.title}
+                                        </h4>
+                                        <p className="text-sm text-slate-600 dark:text-slate-400 truncate">
+                                            {activity.description}
+                                        </p>
+                                        <div className="flex items-center space-x-1 mt-1">
+                                            <Clock className="w-3 h-3 text-slate-400" />
+                                            <span className="text-xs text-slate-500 dark:text-slate-400">
+                                                {activity.time}
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            );
+                        })
+                    }
                 </div>
             </div>
         </div>
-
     )
 }
 
