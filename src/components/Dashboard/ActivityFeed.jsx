@@ -16,6 +16,20 @@ const ActivityFeed = () => {
                     View All
                 </button>
             </div>
+            <div className="p-6">
+                <div className='space-y-6'>
+                    <div className='flex items-start space-x-4 p-3 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors'>
+                        <div className={`p-2 rounded-lg`}>hello world</div>
+                        <div className='flex-1 min-w-0'>
+                            <h4>Activity Title</h4>
+                            <p>Activity Description</p>
+                            <div className='flex items-center-safe space-w-1 mt-1'>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     )
