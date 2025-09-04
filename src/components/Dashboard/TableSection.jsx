@@ -191,14 +191,14 @@ const TableSection = () => {
                                             </p>
                                         </div>
                                         <div className="text-right">
-                                            <p className="text-sm font-semibold">
+                                            <p className={`text-sm font-semibold ${product.trend === "up" ? "text-emerald-500" : "text-red-500"}`} >
                                                 {product.revenue}
                                             </p>
                                             <div className='flex items-center space-x-1'>
                                                 {product.trend === "up" ? (
-                                                    <TrendingUp className="w-3 h-3 text-emerald-500" />
+                                                    <TrendingUp className="w-4 h-4 text-emerald-500" />
                                                 ) : (
-                                                    <TrendingDown className="w-3 h-3 text-red-500" />
+                                                    <TrendingDown className="w-4 h-4 text-red-500" />
                                                 )}
                                             </div>
                                         </div>
